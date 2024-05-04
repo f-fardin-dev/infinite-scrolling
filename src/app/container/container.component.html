@@ -1,0 +1,16 @@
+<div class="container" #container>
+  @if(isLoading()){
+  <div class="text-center">Loading...</div>
+  }@else{ @for(post of posts();track post.id){
+  <div class="post-item" #item>
+    <div class="post-title">Title: {{ post.title }}</div>
+    <span>
+      {{ post.body }}
+    </span>
+  </div>
+  }@empty {
+  <div class="text-center">Nothing to show.</div>
+  } } @if(page < MAX_PAGE_TO_LOAD && !isLoading()){
+  <div class="text-center">Loading more data...</div>
+  }
+</div>

@@ -1,0 +1,24 @@
+.container {
+  overflow-y: auto;
+  height: calc(100% - 50px);
+  padding: 10px 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post-item {
+  padding: 8px;
+  background-color: azure;
+  border-radius: 16px;
+}
+
+.post-title {
+  margin-block-end: 8px;
+}
+
+.text-center {
+  margin: auto;
+  padding: 32px 0;
+}
