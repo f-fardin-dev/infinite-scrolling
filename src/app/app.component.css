@@ -1,0 +1,14 @@
+main {
+  max-width: 600px;
+  height: 100%;
+  background-color: #9fc3c2;
+  margin-inline: auto;
+}
+
+h1 {
+  text-align: center;
+  height: 50px;
+  font-size: 26px;
+  font-weight: 600;
+  padding-block: 8px;
+}
